@@ -2,7 +2,7 @@
 <html lang="zxx">
 
    <head>
-      <title>Sign-Up | Hotline</title>
+      <title>Start your new journey | GC Outsourcing</title>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Hotline is the perfect WHMCS HTML template for your Hosting Business">
@@ -17,61 +17,89 @@
       <link rel="stylesheet" href="assets/css/special-classes.css" type="text/css">
    </head>
    <body>
+      <!-- MAIN HEADER -->  
+<header class="header">  
+   <div class="main-header">
+       <div class="container">
+           <nav class="navbar navbar-expand-lg navbar-light p-0" id="navbar">
+               <a class="navbar-brand" href="index.html">
+                       <figure class="navbar-logo mb-0">
+                       <img class="img-fluid" src="assets/images/logo.png" alt="">
+                       </figure>
+               </a>
+               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                       <span class="navbar-toggler-icon"></span>
+                       <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav m-auto">
+                       <li class="nav-item active">
+                           <a class="nav-link scroll" href="index.html">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link scroll" href="#about">About Us</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link scroll" href="#solutions">Solutions</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link scroll" href="contact.html">Contact</a>
+                       </li>
+                   </ul>
+                   <div class="solutions-section-button">
+                       <a class="hover-effect" href="sign-up.html">Join Us!</a>
+                   </div>
+               </div>
+           </nav>  
+       </div> 
+   </div>
+</header>
       <!-- Sign-Up Form section-->
       <section class="login-form sign-up-form d-flex align-items-center">
          <div class="container">
             <div class="login-form-title text-center">
                <a href="index.html">
                <figure class="login-page-logo">
-                  <img src="assets/images/login-page-logo.png" alt="">
+                  <img src="assets/images/logo.png" alt="">
                </figure>
                </a>
-               <h2 class="text-white">Create your FREE account.</h2>
+               <h2 class="text-white">Work in the best place in town!</h2>
+               <p></p>
             </div>
                <div class="login-form-box">
                   <div class="login-card">
-                     <form>
+                     <form method="post" action="join_us_form.php" enctype="multipart/form-data">
                         <div class="form-group">
-                          <label for="exampleInputName1">Your full name</label>
+                          <label for="exampleInputName1">Your full name *</label>
                           <input  class="input-field form-control" type="text"  id="exampleInputName1" placeholder="e.g. Elon Musk">
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Your e-mail</label>
-                          <input  class="input-field form-control" type="password"  id="exampleInputEmail1" placeholder="e.g. elon@tesla.com">
+                          <label for="exampleInputEmail1">Your e-mail *</label>
+                          <input  class="input-field form-control" type="email"  id="exampleInputEmail1" placeholder="e.g. elon@tesla.com">
                         </div>
                         <div class="form-group">
-                           <label for="exampleInputPassword1">Enter your password <small>min. 6 characters</small></label>
-                           <input  class="input-field form-control" type="password"  id="exampleInputPassword1" placeholder="Password">
+                           <label for="phone">Your contact number *</label>
+                           <input  class="input-field form-control" type="phone"  id="phone" placeholder="Mobile or Phone number">
                          </div>
                          <div class="form-group">
-                           <label for="inputNoncorehub">How did you find out about Noncorehub? <small>(optional)</small></label>
-                           <select id="inputNoncorehub" class="form-control select-option">
-                             <option selected>Please, choose the first interaction you remember.</option>
-                             <option value="online_community">Online community (e.g. GitHub, Reddit, Stack Overflow, Hacker News, ...)</option>
-                              <option value="article">Website article, blog (not ours)</option>
-                              <option value="review_sites">Review site (e.g. G2, Capterra, ...)</option>
-                              <option value="search">Search engine (e.g. Google, Bing, ...)</option>
-                              <option value="mobile_app">App store listing (App Store, Google Play)</option>
-                              <option value="social">Social media (e.g. Twitter / Quora / Facebook / LinkedIn...)</option>
-                              <option value="youtube">YouTube</option>
-                              <option value="friend">From a friend, colleague, ...</option>
-                              <option value="message_groups">Message group (e.g. Discord, Slack, Telegram, ...)</option>
-                              <option value="events">Event (e.g. workshop, conference or meet up)</option>
-                              <option value="podcast">Podcast</option>
-                              <option value="other">Other</option>
-                           </select>
+                           <label for="document">Enter your Dominican ID * <snal>A valid Dominican ID(Cédula) is required to be eligible</snal></label>
+                           <input  class="input-field form-control" type="text"  id="document" placeholder="Your cedula number">
                          </div>
+                         <div class="form-group">
+                           <label for="uploadFile">Upload your resume (Word or PDF) *</label>
+                           <input type="file" class="form-control-file" id="uploadFile" accept=".doc, .docx, .pdf" required>
+                           <small class="form-text text-muted">Please upload a Word or PDF file.</small>
+                       </div>
+
                         <div>
                            <label class="font-weight-normal mt-md-3 mt-2 mb-md-4 mb-3" style="cursor: pointer;">
                            <input class="checkbox" type="checkbox">
-                           Inform me about new features and updates (max. twice a month)
+                           By sumitting this form, you agree to GC Outsourcing's<a href="faq.html"> privacy policy</a>
                            </label>
                         </div>
-                        <button type="submit" class="btn btn-primary mb-0">Register Now</button>
+                        <button type="submit" class="btn btn-primary mb-0">Start Now</button>
                      </form>
-                  </div>
-                  <div class="join-now-outer text-center">
-                     <a class="text-white" href="login.html">Already have an account?</a>
                   </div>
                </div>   
          </div>
